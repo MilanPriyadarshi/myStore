@@ -6,7 +6,7 @@
       <class name="com.bank.testcase.IndexPageTest">
         <methods>
           <include name="setup"/>
-          <include name="verifyTitle"/>
+          <include name="verifyLogo"/>
           <include name="teardown"/>
           <include name="loadCofig"/>
         </methods>

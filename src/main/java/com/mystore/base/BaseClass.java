@@ -1,10 +1,9 @@
-package com.bank.base;
+package com.mystore.base;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 //BaseClass is used to load the config file and Initialize 
@@ -45,8 +44,9 @@ public class BaseClass {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-		driver.get(prop.getProperty("testURL"));
 		driver.manage().window().maximize();
+		driver.get(prop.getProperty("testURL"));
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 	}

@@ -1,10 +1,12 @@
 package com.mystore.pageobjects;
 
+import org.bouncycastle.oer.its.ieee1609dot2.basetypes.PublicEncryptionKey;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import com.mystore.actiondrivers.Action;
 import com.mystore.base.BaseClass;
 
 public class LogInPage extends BaseClass{
@@ -22,6 +24,7 @@ public class LogInPage extends BaseClass{
 	}
 	public HomePage logIn(String uname,String pass)
 	{
+		
 		usernameField.clear();
 		usernameField.sendKeys(uname);
 		passwordField.clear();
@@ -36,6 +39,8 @@ public class LogInPage extends BaseClass{
 		passwordField.clear();
 		passwordField.sendKeys(pass);
 		logInBtn.click();
+		
+		
 		return new OrderConfirmationPage();
 	}
 	public AccountCreationPage userCreation()
@@ -44,4 +49,5 @@ public class LogInPage extends BaseClass{
 		return new AccountCreationPage();
 		
 	}
+
 }

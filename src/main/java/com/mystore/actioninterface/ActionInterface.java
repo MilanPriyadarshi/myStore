@@ -1,4 +1,4 @@
-package com.bank.actioninterface;
+package com.mystore.actioninterface;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

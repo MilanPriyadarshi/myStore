@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 //BaseClass is used to load the config file and Initialize 
-//WebDriver
+//WebDriver instance
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;

@@ -1,12 +1,8 @@
 package com.mystore.pageobjects;
-
-import org.bouncycastle.oer.its.ieee1609dot2.basetypes.PublicEncryptionKey;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
-import com.mystore.actiondrivers.Action;
 import com.mystore.base.BaseClass;
 
 public class LogInPage extends BaseClass{
@@ -22,14 +18,16 @@ public class LogInPage extends BaseClass{
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public HomePage logIn(String uname,String pass)
+	public HomePage logIn(String uname,String pass) throws InterruptedException
 	{
 		
 		usernameField.clear();
 		usernameField.sendKeys(uname);
 		passwordField.clear();
 		passwordField.sendKeys(pass);
+		Thread.sleep(2000);
 		logInBtn.click();
+		Thread.sleep(2000);
 		return new HomePage();
 	}
 	public OrderConfirmationPage logIn1(String uname,String pass)

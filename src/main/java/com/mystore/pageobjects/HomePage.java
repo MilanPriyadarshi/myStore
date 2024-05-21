@@ -15,6 +15,11 @@ public class HomePage extends BaseClass{
 	{
 		PageFactory.initElements(driver, this);
 	}
+	public String getCurrentURL()
+	{
+		String currURL=driver.getCurrentUrl();
+		return currURL;
+	}
 	public boolean validateWishlist()
 	{
 		boolean flag=false;

@@ -12,9 +12,11 @@ public class OrderConfirmationPage extends BaseClass{
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public ClosingPage confirmOrder()
+	public ClosingPage confirmOrderClick() throws InterruptedException
 	{
 		confirmBtn.click();
+		Thread.sleep(2000);
 		return new ClosingPage();
+		
 	}
 }

@@ -1,4 +1,11 @@
 package com.mystore.pageobjects;
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -33,6 +40,13 @@ public class HomePage extends BaseClass{
 			System.out.println("The element is not displayed");
 		}
 		return flag;
+	}
+	public void homePageScreenshot() throws IOException {
+		Date date=new Date();
+		String fileName= date.toString().replace(":", "_").replace("", "_")+".png";
+		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(file,new File("C:\\Users\\USER\\eclipse-workspace\\myStore\\ScreenShots\\"+fileName));
+		
 	}
 	public boolean validateOrderHistory()
 	{

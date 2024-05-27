@@ -1,5 +1,7 @@
 package com.mystore.testcase;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,12 +27,13 @@ public class HomePageTest extends BaseClass {
 		driver.quit();
 	}
 	@Test
-	public void wishListCheck() throws InterruptedException {
+	public void wishListCheck() throws InterruptedException, IOException {
 		indexPage=new IndexPage();
 		logInPage=new LogInPage();
 		homePage=new HomePage();
 		logInPage=indexPage.clickOnLogIn();
 		homePage=logInPage.logIn(prop.getProperty("username"), prop.getProperty("password"));
+		homePage.homePageScreenshot();
 		boolean res=homePage.validateWishlist();
 		Assert.assertTrue(res);
 		

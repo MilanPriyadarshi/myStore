@@ -8,16 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class ClosingPage extends BaseClass {
-	@FindBy(how=How.XPATH,using="//span[text()=' Your Order Has Been Processed!']")
+	@FindBy(how=How.XPATH,using="//span[@class='maintext']")
 	WebElement confirmMsg;
+	
 	public ClosingPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public boolean confirmation()
+	public String getConfirmationMsg()
 	{
-		boolean flag=confirmMsg.isDisplayed();
-		return flag;
+		String res=confirmMsg.getText();
+		return res;
+		
 	}
 
 }

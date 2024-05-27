@@ -13,7 +13,7 @@ public class SearchResultPage extends BaseClass{
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public AddToCartPage searchResult()
+	public AddToCartPage clickOnProduct()
 	{
 		productRes.click();
 		return new AddToCartPage();

@@ -17,19 +17,24 @@ public class OrderPage extends BaseClass{
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public Double getUnitPrice()
+	public double getUnitPrice()
 	{
 		String up=unitPrice.getText();
-		up.replaceAll("[^a-zA-Z0-9]", "");
-		Double unitPrice=Double.parseDouble(up);
-		return unitPrice;
+		String up1=up.replaceAll("[^a-zA-Z0-9]","");
+		double upd=Double.parseDouble(up1);
+		double rup=upd/100;
+		return rup;
+//		up.replaceAll("[^a-zA-Z0-9]", "");
+//		double unitPrice=Double.parseDouble(up);
+//		return unitPrice;
 	}
 	public Double getTotalPrice()
 	{
 		String tp=totalPrice.getText();
-		tp.replaceAll("[^a-zA-Z0-9]", "");
-		Double totalPrice=Double.parseDouble(tp);
-		return totalPrice;
+		String tp1=tp.replaceAll("[^a-zA-Z0-9]", "");
+		double totalPrice=Double.parseDouble(tp1);
+		double rtp=totalPrice/100;
+		return rtp;
 	}
 	public LogInPage proceedToCheckOut()
 	{

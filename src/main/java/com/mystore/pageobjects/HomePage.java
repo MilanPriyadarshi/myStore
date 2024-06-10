@@ -20,11 +20,11 @@ public class HomePage extends BaseClass{
 	WebElement orderHistory;
 	public HomePage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public String getCurrentURL()
 	{
-		String currURL=driver.getCurrentUrl();
+		String currURL=getDriver().getCurrentUrl();
 		return currURL;
 	}
 	public boolean validateWishlist()

@@ -20,7 +20,7 @@ public class AddToCartPage extends BaseClass {
 	WebElement addToCartBtn;
 	public AddToCartPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public void setQuantity(String quantity1)
 	{

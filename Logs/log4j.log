@@ -1,0 +1,10 @@
+2024-06-11 00:21:39 INFO  Logger:12 - =====================================End-To-End TEST START=========================================
+2024-06-11 00:21:39 INFO  Logger:23 - User is going to search the product
+2024-06-11 00:21:40 INFO  Logger:23 - User is going to click on the product
+2024-06-11 00:21:42 INFO  Logger:23 - User is going to select the quantity of the product
+2024-06-11 00:21:42 INFO  Logger:23 - User is going to add the product to cart
+2024-06-11 00:21:43 INFO  Logger:23 - Verification of total price with unit price
+2024-06-11 00:21:43 INFO  Logger:23 - User is going to checkout
+2024-06-11 00:21:44 INFO  Logger:23 - User is going enter Username and Password
+2024-06-11 00:21:46 INFO  Logger:23 - User is going to confirm the order
+2024-06-11 00:21:48 INFO  Logger:23 - Verification of confirmation

@@ -16,7 +16,7 @@ public class LogInPage extends BaseClass{
 	WebElement newUserBtn;
 	public LogInPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public HomePage logIn(String uname,String pass) throws InterruptedException
 	{

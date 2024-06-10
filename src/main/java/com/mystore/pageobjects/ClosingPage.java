@@ -13,7 +13,7 @@ public class ClosingPage extends BaseClass {
 	
 	public ClosingPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public String getConfirmationMsg()
 	{

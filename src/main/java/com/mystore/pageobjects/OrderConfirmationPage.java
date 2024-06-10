@@ -10,7 +10,7 @@ public class OrderConfirmationPage extends BaseClass{
 	WebElement confirmBtn;
 	public OrderConfirmationPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public ClosingPage confirmOrderClick() throws InterruptedException
 	{

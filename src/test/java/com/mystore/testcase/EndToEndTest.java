@@ -23,6 +23,7 @@ import com.mystore.pageobjects.LogInPage;
 import com.mystore.pageobjects.OrderConfirmationPage;
 import com.mystore.pageobjects.OrderPage;
 import com.mystore.pageobjects.SearchResultPage;
+import com.mystore.utility.Log;
 
 public class EndToEndTest extends BaseClass{
 	LogInPage logInPage;
@@ -41,27 +42,37 @@ public class EndToEndTest extends BaseClass{
 	@AfterMethod
 	public void teardown()
 	{
-		driver.quit();
+		getDriver().quit();
 	}
 	@Test
 	public void endToEndTest() throws InterruptedException {
+		Log.startTestCase("End-To-End");
 //		SoftAssert softAssert=new SoftAssert();
 		indexPage=new IndexPage();
+		Log.info("User is going to search the product");
 		searchResultPage=indexPage.searchProduct(prop.getProperty("search"));
+		Log.info("User is going to click on the product");
 		addToCartPage=searchResultPage.clickOnProduct();
 		String quantity=prop.getProperty("quantity");
+		Log.info("User is going to select the quantity of the product");
 		addToCartPage.setQuantity(quantity);
+		Log.info("User is going to add the product to cart");
 		orderPage=addToCartPage.addToCart();
 		int q=Integer.parseInt(quantity);
 		double unit=orderPage.getUnitPrice();
 		double actualp=unit*q;
 		double total=orderPage.getTotalPrice();
+		Log.info("Verification of total price with unit price");
 		Assert.assertEquals(actualp, total, "Matched");
+		Log.info("User is going to checkout");
 		logInPage=orderPage.proceedToCheckOut();
+		Log.info("User is going enter Username and Password");
 		orderConfirmationPage=logInPage.logIn1(prop.getProperty("username"), prop.getProperty("password"));
+		Log.info("User is going to confirm the order");
 		closingPage=orderConfirmationPage.confirmOrderClick();
 		String actual=closingPage.getConfirmationMsg();
 		String expected="YOUR ORDER HAS BEEN PROCESSED!";
+		Log.info("Verification of confirmation");
 		Assert.assertEquals(actual, expected);
 		
 	}

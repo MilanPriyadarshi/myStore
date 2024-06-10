@@ -21,7 +21,7 @@ public class IndexPage extends BaseClass{
 	
 	public IndexPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public LogInPage clickOnLogIn()
 	{
@@ -30,7 +30,7 @@ public class IndexPage extends BaseClass{
 	}
 	public String getPageTitle()
 	{
-		String pageTitle=driver.getTitle();
+		String pageTitle=getDriver().getTitle();
 		return pageTitle;
 	}
 	public boolean validateLogo()

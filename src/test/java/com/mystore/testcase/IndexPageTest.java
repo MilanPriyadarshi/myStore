@@ -19,7 +19,7 @@ public class IndexPageTest extends BaseClass {
 	@AfterMethod
 	public void teardown()
 	{
-		driver.quit();
+		getDriver().quit();
 	}
 	@Test
 	public void verifyTitle()

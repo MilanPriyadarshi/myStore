@@ -22,7 +22,7 @@ public class LogInPageTest extends BaseClass {
 	@AfterMethod
 	public void teardown()
 	{
-		driver.quit();
+		getDriver().quit();
 	}
 	@Test
 	public void verifyLogIn() throws InterruptedException

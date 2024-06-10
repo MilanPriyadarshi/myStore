@@ -15,7 +15,7 @@ public class OrderPage extends BaseClass{
 	WebElement checkOutBtn;
 	public OrderPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public double getUnitPrice()
 	{

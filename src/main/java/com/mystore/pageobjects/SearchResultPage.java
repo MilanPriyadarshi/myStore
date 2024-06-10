@@ -11,7 +11,7 @@ public class SearchResultPage extends BaseClass{
 	WebElement productRes;
 	public SearchResultPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	public AddToCartPage clickOnProduct()
 	{

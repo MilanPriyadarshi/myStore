@@ -24,7 +24,7 @@ public class HomePageTest extends BaseClass {
 	@AfterMethod
 	public void teardown()
 	{
-		driver.quit();
+		getDriver().quit();
 	}
 	@Test
 	public void wishListCheck() throws InterruptedException, IOException {

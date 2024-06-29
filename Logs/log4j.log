@@ -8,3 +8,43 @@
 2024-06-11 00:21:44 INFO  Logger:23 - User is going enter Username and Password
 2024-06-11 00:21:46 INFO  Logger:23 - User is going to confirm the order
 2024-06-11 00:21:48 INFO  Logger:23 - Verification of confirmation
+2024-06-23 15:13:43 INFO  Logger:12 - =====================================End-To-End TEST START=========================================
+2024-06-23 15:13:44 INFO  Logger:23 - User is going to search the product
+2024-06-23 15:13:48 INFO  Logger:23 - User is going to click on the product
+2024-06-23 15:13:51 INFO  Logger:23 - User is going to select the quantity of the product
+2024-06-23 15:13:52 INFO  Logger:23 - User is going to add the product to cart
+2024-06-23 15:13:55 INFO  Logger:23 - Verification of total price with unit price
+2024-06-23 15:13:55 INFO  Logger:23 - User is going to checkout
+2024-06-23 15:14:02 INFO  Logger:23 - User is going enter Username and Password
+2024-06-23 15:14:13 INFO  Logger:23 - User is going to confirm the order
+2024-06-23 15:14:19 INFO  Logger:23 - Verification of confirmation
+2024-06-23 15:17:50 INFO  Logger:12 - =====================================End-To-End TEST START=========================================
+2024-06-23 15:17:50 INFO  Logger:23 - User is going to search the product
+2024-06-23 15:18:05 INFO  Logger:23 - User is going to click on the product
+2024-06-23 15:18:09 INFO  Logger:23 - User is going to select the quantity of the product
+2024-06-23 15:18:09 INFO  Logger:23 - User is going to add the product to cart
+2024-06-23 15:18:12 INFO  Logger:23 - Verification of total price with unit price
+2024-06-23 15:18:12 INFO  Logger:23 - User is going to checkout
+2024-06-23 15:18:14 INFO  Logger:23 - User is going enter Username and Password
+2024-06-23 15:18:18 INFO  Logger:23 - User is going to confirm the order
+2024-06-23 15:18:21 INFO  Logger:23 - Verification of confirmation
+2024-06-27 14:38:27 INFO  Logger:12 - =====================================End-To-End TEST START=========================================
+2024-06-27 14:38:28 INFO  Logger:23 - User is going to search the product
+2024-06-27 14:38:30 INFO  Logger:23 - User is going to click on the product
+2024-06-27 14:38:32 INFO  Logger:23 - User is going to select the quantity of the product
+2024-06-27 14:38:33 INFO  Logger:23 - User is going to add the product to cart
+2024-06-27 14:38:35 INFO  Logger:23 - Verification of total price with unit price
+2024-06-27 14:38:35 INFO  Logger:23 - User is going to checkout
+2024-06-27 14:38:37 INFO  Logger:23 - User is going enter Username and Password
+2024-06-27 14:38:40 INFO  Logger:23 - User is going to confirm the order
+2024-06-27 14:38:42 INFO  Logger:23 - Verification of confirmation
+2024-06-29 14:56:24 INFO  Logger:12 - =====================================End-To-End TEST START=========================================
+2024-06-29 14:56:24 INFO  Logger:23 - User is going to search the product
+2024-06-29 14:56:26 INFO  Logger:23 - User is going to click on the product
+2024-06-29 14:56:28 INFO  Logger:23 - User is going to select the quantity of the product
+2024-06-29 14:56:29 INFO  Logger:23 - User is going to add the product to cart
+2024-06-29 14:56:31 INFO  Logger:23 - Verification of total price with unit price
+2024-06-29 14:56:31 INFO  Logger:23 - User is going to checkout
+2024-06-29 14:56:32 INFO  Logger:23 - User is going enter Username and Password
+2024-06-29 14:56:35 INFO  Logger:23 - User is going to confirm the order
+2024-06-29 14:56:38 INFO  Logger:23 - Verification of confirmation

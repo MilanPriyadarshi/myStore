@@ -24,6 +24,7 @@ import com.mystore.pageobjects.OrderConfirmationPage;
 import com.mystore.pageobjects.OrderPage;
 import com.mystore.pageobjects.SearchResultPage;
 import com.mystore.utility.Log;
+import com.mystore.utility.ReadDataFromExcel;
 
 public class EndToEndTest extends BaseClass{
 	LogInPage logInPage;
@@ -44,8 +45,8 @@ public class EndToEndTest extends BaseClass{
 	{
 		getDriver().quit();
 	}
-	@Test
-	public void endToEndTest() throws InterruptedException {
+	@Test(dataProvider = "logInData", dataProviderClass = ReadDataFromExcel.class)
+	public void endToEndTest(String userName,String password) throws InterruptedException {
 		Log.startTestCase("End-To-End");
 //		SoftAssert softAssert=new SoftAssert();
 		indexPage=new IndexPage();
@@ -67,7 +68,7 @@ public class EndToEndTest extends BaseClass{
 		Log.info("User is going to checkout");
 		logInPage=orderPage.proceedToCheckOut();
 		Log.info("User is going enter Username and Password");
-		orderConfirmationPage=logInPage.logIn1(prop.getProperty("username"), prop.getProperty("password"));
+		orderConfirmationPage=logInPage.logIn1(userName,password);
 		Log.info("User is going to confirm the order");
 		closingPage=orderConfirmationPage.confirmOrderClick();
 		String actual=closingPage.getConfirmationMsg();

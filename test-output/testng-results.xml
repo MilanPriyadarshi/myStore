@@ -2,39 +2,51 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T00:21:31 IST" name="Default suite" finished-at="2024-06-11T00:21:49 IST" duration-ms="17601">
+  <suite started-at="2024-06-29T14:55:50 IST" name="Default suite" finished-at="2024-06-29T14:56:40 IST" duration-ms="49703">
     <groups>
     </groups>
-    <test started-at="2024-06-11T00:21:31 IST" name="Default test" finished-at="2024-06-11T00:21:49 IST" duration-ms="17601">
+    <test started-at="2024-06-29T14:55:50 IST" name="Default test" finished-at="2024-06-29T14:56:40 IST" duration-ms="49703">
       <class name="com.mystore.testcase.EndToEndTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:31 IST" name="beforeSuite" finished-at="2024-06-11T00:21:31 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:55:49 IST" name="beforeSuite" finished-at="2024-06-29T14:55:50 IST" duration-ms="1352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="loadCofig()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:31 IST" name="loadCofig" finished-at="2024-06-11T00:21:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadCofig()[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:55:50 IST" name="loadCofig" finished-at="2024-06-29T14:55:50 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadCofig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:31 IST" name="setup" finished-at="2024-06-11T00:21:39 IST" duration-ms="8011" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:55:54 IST" name="setup" finished-at="2024-06-29T14:56:23 IST" duration-ms="28638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:39 IST" name="endToEndTest" finished-at="2024-06-11T00:21:48 IST" duration-ms="8964" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="screenShotOfFailedTestCase(org.testng.ITestResult)[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:48 IST" name="screenShotOfFailedTestCase" finished-at="2024-06-11T00:21:48 IST" duration-ms="16" status="PASS">
+        <test-method signature="endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:56:23 IST" name="endToEndTest" data-provider="logInData" finished-at="2024-06-29T14:56:38 IST" duration-ms="14236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=endToEndTest status=SUCCESS method=EndToEndTest.endToEndTest()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6] output={null}]]]>
+                <![CDATA[milan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[milan@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndTest -->
+        <test-method is-config="true" signature="screenShotOfFailedTestCase(org.testng.ITestResult)[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:56:38 IST" name="screenShotOfFailedTestCase" finished-at="2024-06-29T14:56:38 IST" duration-ms="32" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=endToEndTest status=SUCCESS method=EndToEndTest.endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOfFailedTestCase -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.EndToEndTest@7db12bb6]" started-at="2024-06-11T00:21:48 IST" name="teardown" finished-at="2024-06-11T00:21:49 IST" duration-ms="578" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.EndToEndTest@60bd273d]" started-at="2024-06-29T14:56:38 IST" name="teardown" finished-at="2024-06-29T14:56:40 IST" duration-ms="2266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -10,10 +10,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 //import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.bank.dataproviders.DataProviders;
 import com.mystore.base.BaseClass;
 import com.mystore.pageobjects.AddToCartPage;
@@ -35,6 +39,11 @@ public class EndToEndTest extends BaseClass{
 	OrderPage orderPage;
 	OrderConfirmationPage orderConfirmationPage;
 	ClosingPage closingPage;
+	@BeforeTest
+	public void startReport()
+	{
+		initializeReports();
+	}
 	@BeforeMethod
 	public void setup()
 	{
@@ -52,6 +61,11 @@ public class EndToEndTest extends BaseClass{
 		indexPage=new IndexPage();
 		Log.info("User is going to search the product");
 		searchResultPage=indexPage.searchProduct(prop.getProperty("search"));
+		String methodName=new Exception().getStackTrace()[0].getMethodName();
+		String className=new Exception().getStackTrace()[0].getClassName();
+		tests=reports.createTest(methodName,"Using is searching for product");
+		tests.log(Status.INFO,"Opening Index pgae and searching for a product");
+		tests.assignCategory("Regression Testing");
 		Log.info("User is going to click on the product");
 		addToCartPage=searchResultPage.clickOnProduct();
 		String quantity=prop.getProperty("quantity");
@@ -87,6 +101,11 @@ public class EndToEndTest extends BaseClass{
 			File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(src, new File(".//ScreenShots//"+fileName));
 		}
+	}
+	@AfterTest
+	public void endReport()
+	{
+		reports.flush();
 	}
 
 }

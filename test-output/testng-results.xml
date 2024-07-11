@@ -1,273 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-02T21:24:51 IST" name="Default suite" finished-at="2024-07-02T21:26:56 IST" duration-ms="124650">
+  <suite started-at="2024-07-11T22:03:18 IST" name="Default suite" finished-at="2024-07-11T22:04:14 IST" duration-ms="55732">
     <groups>
     </groups>
-    <test started-at="2024-07-02T21:24:51 IST" name="Default test" finished-at="2024-07-02T21:26:56 IST" duration-ms="124650">
-      <class name="com.mystore.testcase.AccountCreationTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:24:50 IST" name="beforeSuite" finished-at="2024-07-02T21:24:51 IST" duration-ms="833" status="PASS">
+    <test started-at="2024-07-11T22:03:18 IST" name="Default test" finished-at="2024-07-11T22:04:14 IST" duration-ms="55732">
+      <class name="com.mystore.testcase.EndToEndTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:03:18 IST" name="beforeSuite" finished-at="2024-07-11T22:03:18 IST" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="loadCofig()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:24:51 IST" name="loadCofig" finished-at="2024-07-02T21:24:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadCofig()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:03:18 IST" name="loadCofig" finished-at="2024-07-11T22:03:18 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadCofig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:24:54 IST" name="setup" finished-at="2024-07-02T21:25:07 IST" duration-ms="12493" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:03:18 IST" name="startReport" finished-at="2024-07-11T22:03:20 IST" depends-on-methods="com.mystore.base.BaseClass.loadCofig" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:03:23 IST" name="setup" finished-at="2024-07-11T22:03:48 IST" duration-ms="25193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="accountCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:07 IST" name="accountCreation" data-provider="AccountDetails" finished-at="2024-07-02T21:25:19 IST" duration-ms="12170" status="PASS">
+        <test-method signature="endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:03:48 IST" name="endToEndTest" data-provider="logInData" finished-at="2024-07-11T22:04:01 IST" duration-ms="12323" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Milan]]>
+                <![CDATA[milan]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sutar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test1@email.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[5555566666]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[6666655555]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[tcs]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[bbsr]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[ctc]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[bbsr]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Orissa]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[751021]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Milan79782]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Milan@123]]>
+                <![CDATA[milan@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:19 IST" name="teardown" finished-at="2024-07-02T21:25:29 IST" duration-ms="10288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:29 IST" name="setup" finished-at="2024-07-02T21:25:40 IST" duration-ms="10223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="accountCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:40 IST" name="accountCreation" data-provider="AccountDetails" finished-at="2024-07-02T21:25:52 IST" duration-ms="12677" status="PASS">
+        </test-method> <!-- endToEndTest -->
+        <test-method is-config="true" signature="screenShotOfFailedTestCase(org.testng.ITestResult)[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:04:01 IST" name="screenShotOfFailedTestCase" finished-at="2024-07-11T22:04:01 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tarun]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Priyadarshi]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test2@fmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[7777799999]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9999977777]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[infosys]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[ctc]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[bhub]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[bhub]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Goa]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[654345]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Tarun79782]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Tarun@123]]>
+                <![CDATA[[TestResult name=endToEndTest status=SUCCESS method=EndToEndTest.endToEndTest(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:52 IST" name="teardown" finished-at="2024-07-02T21:25:53 IST" duration-ms="912" status="PASS">
+        </test-method> <!-- screenShotOfFailedTestCase -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:04:01 IST" name="teardown" finished-at="2024-07-11T22:04:11 IST" duration-ms="10627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:25:53 IST" name="setup" finished-at="2024-07-02T21:26:04 IST" duration-ms="10414" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.mystore.testcase.EndToEndTest@45099dd3]" started-at="2024-07-11T22:04:11 IST" name="endReport" finished-at="2024-07-11T22:04:14 IST" duration-ms="2808" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="accountCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:26:04 IST" name="accountCreation" data-provider="AccountDetails" finished-at="2024-07-02T21:26:21 IST" duration-ms="17095" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gudu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Maharana]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test3@hmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1111188888]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8888811111]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[HCL]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Rusikesh]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[sikher]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Jalandar]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Punjab]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[654234]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Gudu79782]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Gudu@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountCreation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcase.AccountCreationTest@5d534f5d]" started-at="2024-07-02T21:26:21 IST" name="teardown" finished-at="2024-07-02T21:26:56 IST" duration-ms="34647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.mystore.testcase.AccountCreationTest -->
+        </test-method> <!-- endReport -->
+      </class> <!-- com.mystore.testcase.EndToEndTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

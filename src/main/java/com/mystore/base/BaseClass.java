@@ -15,12 +15,21 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import org.apache.log4j.xml.DOMConfigurator;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 //	public static WebDriver driver;
+	public static ExtentSparkReporter sparkReporter;
+	public static ExtentReports reports;
+	public static ExtentTest tests;
+	
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<>(); 
 	@BeforeSuite
 	public void beforeSuite()
@@ -67,5 +76,14 @@ public class BaseClass {
 		
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
+	}
+	public void initializeReports()
+	{
+		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/ExtentSparkReports.html");
+		sparkReporter.config().setDocumentTitle("Automation Testing");
+		sparkReporter.config().setReportName("Execution Summery");
+		sparkReporter.config().setTheme(Theme.DARK);
+		reports=new ExtentReports();
+		reports.attachReporter(sparkReporter);
 	}
 }
